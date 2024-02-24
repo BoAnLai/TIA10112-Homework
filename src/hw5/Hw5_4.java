@@ -15,23 +15,23 @@ public class Hw5_4 {
 		for(int i = 0;i<8;i++) {
 			
 			int random = getRandomInt();
-			int digit = 0;
+			int getUnicode = 0;
 
 		//  數字\u0030 - \u0039
 		//  英文字母大寫\u0041 - \u005a
 		//  英文字母小寫\u0061 - \u007a
 			
 			if(random>0 && random <=10) {
-				 digit = 0x30 - 1 + random;
+				 getUnicode = 0x30 - 1 + random;
 			} else if (random > 10 && random <= 36) {
-				digit = 0x41 - 1 + random - 10;
+				getUnicode = 0x41 - 1 + random - 10;
 			} else if (random > 36 && random <= 62) {
-				digit = 0x61 - 1 + random -36;
+				getUnicode = 0x61 - 1 + random -36;
 			} else {
 				System.out.println("=== something wrong happen in getRandomInt()'s numeric range  ===");
 			}
 			
-			 output += Character.toChars(digit)[0];
+			 output += Character.toChars(getUnicode)[0];
 		}
 		
 		return output;
