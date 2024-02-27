@@ -5,9 +5,18 @@ public class Hw5_4 {
 	public static void main(String[] args) {
 		System.out.println("===Hw5_4===");
 		System.out.println("本次隨機產生驗證碼為:");
-		System.out.println(getAuthCode());
+		System.out.println(Lib.getAuthCode());
 		
 	}
+	
+}
+
+class Lib{
+//  隨機取數字1~62 (10+26+26)
+	public static int getRandomInt(){
+		int output = (int)Math.ceil(Math.random()*62);
+		return output;
+	}	
 	
 	public static String getAuthCode() {
 		String output = "";
@@ -34,12 +43,6 @@ public class Hw5_4 {
 			 output += Character.toChars(getUnicode)[0];
 		}
 		
-		return output;
-	}
-	
-//  隨機取數字1~62 (10+26+26)
-	public static int getRandomInt(){
-		int output = (int)Math.ceil(Math.random()*62);
 		return output;
 	}
 }
