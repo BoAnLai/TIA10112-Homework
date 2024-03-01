@@ -40,7 +40,8 @@ class Lib{
 				System.out.println("=== something wrong happen in getRandomInt()'s numeric range  ===");
 			}
 			
-			 output += Character.toChars(getUnicode)[0];
+//			 output += Character.toChars(getUnicode)[0];
+			output += (char)getUnicode;
 		}
 		
 		return output;
