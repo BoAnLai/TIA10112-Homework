@@ -1,6 +1,6 @@
-package hw6;
+package hwext;
 
-public class Hw6 {
+public class Hwext {
 
 	public static void main(String[] args) {
 		
